@@ -37,16 +37,11 @@ module.exports = {
         200: '36rem',
         '2/3-screen': '65vh',
         '3/4-screen': '75vh',
+        '1/10': '10%',
+        '5/100': '5%',
       },
       boxShadow: {
         'outline-normal': '0 0 0 2px var(--accent-2)',
-      },
-      lineHeight: {
-        'extra-loose': '2.2',
-        11: '3rem',
-        12: '3.5rem',
-        13: '4rem',
-        14: '4.5rem',
       },
       blur: {
         '4xl': '500px',
