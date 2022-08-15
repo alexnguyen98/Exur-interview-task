@@ -19,7 +19,7 @@ const ProductOverview: React.FC = () => {
   if (error) return <div>An error occured!</div>;
 
   return (
-    <div className="grid grid-cols-3 gap-5">
+    <div className="my-10 grid grid-cols-2 md:grid-cols-3 gap-5">
       {data?.results?.map((i: Product) => (
         <ProductItem key={i.id} data={i} />
       ))}

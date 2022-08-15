@@ -8,8 +8,8 @@ type Props = {
 };
 
 const ProductItem: React.FC<Props> = ({ data }) => (
-  <div className="hover:scale-110 bg-white">
-    <div className="h-52 bg-zinc-100">
+  <div className="hover:scale-105 bg-white">
+    <div className="h-44 md:h-52 bg-zinc-100">
       <img
         className="h-full w-full object-cover"
         src={SERVER_BASE + '/picture/' + data.id}
