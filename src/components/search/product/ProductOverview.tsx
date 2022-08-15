@@ -4,6 +4,7 @@ import { Product } from '../../../types/product';
 import Text from '../../common/Text';
 import Loading from '../../icons/Loading';
 import ProductItem from './ProductItem';
+import ProductPagination from './ProductPagination';
 
 const ProductOverview: React.FC = () => {
   const { data, loading, error } = useProductOverview();
@@ -31,11 +32,7 @@ const ProductOverview: React.FC = () => {
           <ProductItem key={i.id} data={i} />
         ))}
       </div>
-      <div className="flex justify-center">
-        <div className="bg-zinc-200 px-5 py-2">
-          <Text variant="link">{data.currentPage}</Text>
-        </div>
-      </div>
+      <ProductPagination currentPage={data?.currentPage} />
     </>
   );
 };
