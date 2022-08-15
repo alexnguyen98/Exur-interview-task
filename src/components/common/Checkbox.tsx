@@ -8,7 +8,7 @@ type Props = {
   name?: string;
   required?: boolean;
   checked?: boolean;
-  onChange?: (e: any) => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 const Checkbox: React.FC<Props> = ({ className, children, ...props }) => (

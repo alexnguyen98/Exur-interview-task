@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Search from '../../icons/Search';
 
 const FreeTextSearch: React.FC = () => {
+  const [searchInput, setSearchInput] = useState('');
+  const router = useRouter();
+
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
+
+    router.push({
+      query: {
+        ...router.query,
+        search: searchInput,
+      },
+    });
   };
 
   return (
@@ -14,6 +25,8 @@ const FreeTextSearch: React.FC = () => {
       <input
         className="w-full bg-zinc-200 px-5 py-2"
         placeholder="Søg produkter"
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
       />
     </form>
   );
