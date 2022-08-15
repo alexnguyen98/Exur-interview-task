@@ -39,8 +39,7 @@ const CheckFilter: React.FC = () => {
         <div className="py-4">
           {complianceTypes.map((i) => (
             <Checkbox
-              //@ts-ignore
-              id={i.id}
+              key={i.id}
               name={i.id}
               checked={complianceTypeIds.includes(i.id)}
               onChange={handleCheckbox}
