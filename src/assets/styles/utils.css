@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply py-2 px-3 rounded-md border border-zinc-900 bg-zinc-700;
+}
+
+.select {
+  @apply rounded-md border border-zinc-900 bg-zinc-700;
+}
+
+.checkbox {
+  @apply rounded-sm border-zinc-400;
+}
