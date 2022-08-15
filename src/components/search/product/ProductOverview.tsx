@@ -1,7 +1,6 @@
 import React from 'react';
 import { useProductOverview } from '../../../hooks/api';
 import { Product } from '../../../types/product';
-import Text from '../../common/Text';
 import Loading from '../../icons/Loading';
 import ProductItem from './ProductItem';
 import ProductPagination from './ProductPagination';

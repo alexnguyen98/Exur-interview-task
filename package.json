@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_ENV=development NODE_OPTIONS='--inspect' next dev",
     "debug": "cross-env NODE_OPTIONS='--inspect' next",
     "build": "rimraf ./.next && next build",
-    "start": "cross-env NODE_ENV=production next start -p $PORT",
+    "start": "cross-env NODE_ENV=production next start",
     "lint": "next lint",
     "type-check": "tsc"
   },

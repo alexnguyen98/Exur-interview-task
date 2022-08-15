@@ -1,7 +1,7 @@
 {
-  "name": "",
-  "short_name": " ",
-  "description": "",
+  "name": "Produkter.dk",
+  "short_name": "Produkter",
+  "description": "Exurio frontend task",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#fff",
